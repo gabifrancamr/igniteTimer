@@ -51,7 +51,7 @@ export const InputTask = styled(BaseInput)`
   flex: 1;
 `
 
-export const InputMinute = styled(BaseInput)`
+export const MinuteAmountInput = styled(BaseInput)`
   width: 4rem;
 `
 

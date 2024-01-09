@@ -4,7 +4,7 @@ import {
   CountdownContainer,
   FormContainer,
   HomeContainer,
-  InputMinute,
+  MinuteAmountInput,
   InputTask,
   Separator,
 } from './styles'
@@ -21,7 +21,11 @@ export function Home() {
             placeholder="Dê um nome ao seu projeto"
           />
           <label htmlFor="minutesAmount">durante</label>
-          <InputMinute type="number" id="minutesAmount" placeholder="00" />
+          <MinuteAmountInput
+            type="number"
+            id="minutesAmount"
+            placeholder="00"
+          />
 
           <span>minutos.</span>
         </FormContainer>
