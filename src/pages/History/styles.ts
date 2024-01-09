@@ -19,6 +19,18 @@ export const HistoryList = styled.div`
   max-height: 18rem;
   margin-top: 1.5rem;
 
+  &::-webkit-scrollbar {
+    background-color: ${(props) => props.theme['gray-600']};
+    border-radius: 8px;
+    width: 0.625rem;
+    height: 0.625rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: ${(props) => props.theme['gray-400']};
+  }
+
   table {
     width: 100%;
     border-collapse: collapse;
