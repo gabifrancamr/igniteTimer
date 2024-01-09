@@ -28,14 +28,14 @@ export const FormContainer = styled.div`
 `
 
 const BaseInput = styled.input`
+  background-color: transparent;
   height: 2.5rem;
-  padding: 0 0.5rem;
   border: 0;
   border-bottom: 2px solid ${(props) => props.theme['gray-500']};
-  color: ${(props) => props.theme['gray-100']};
-  background-color: transparent;
   font-weight: bold;
   font-size: 1.125rem;
+  padding: 0 0.5rem;
+  color: ${(props) => props.theme['gray-100']};
 
   &:focus {
     box-shadow: none;
