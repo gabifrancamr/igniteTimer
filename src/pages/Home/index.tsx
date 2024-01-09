@@ -5,7 +5,7 @@ import {
   FormContainer,
   HomeContainer,
   MinuteAmountInput,
-  InputTask,
+  TaskInput,
   Separator,
 } from './styles'
 
@@ -15,7 +15,7 @@ export function Home() {
       <form action="">
         <FormContainer>
           <label htmlFor="task">Vou trabalhar em</label>
-          <InputTask
+          <TaskInput
             type="text"
             id="task"
             placeholder="Dê um nome ao seu projeto"

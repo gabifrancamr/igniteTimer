@@ -36,18 +36,16 @@ const BaseInput = styled.input`
   font-size: 1.125rem;
   padding: 0 0.5rem;
   color: ${(props) => props.theme['gray-100']};
-
   &:focus {
     box-shadow: none;
-    border-bottom: 2px solid ${(props) => props.theme['green-500']};
+    border-color: ${(props) => props.theme['green-500']};
   }
-
   &::placeholder {
     color: ${(props) => props.theme['gray-500']};
   }
 `
 
-export const InputTask = styled(BaseInput)`
+export const TaskInput = styled(BaseInput)`
   flex: 1;
 `
 
