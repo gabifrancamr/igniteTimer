@@ -18,7 +18,7 @@ export function Home() {
           <TaskInput
             type="text"
             id="task"
-            placeholder="Dê um nome ao seu projeto"
+            placeholder="Dê um nome para o seu projeto"
           />
           <label htmlFor="minutesAmount">durante</label>
           <MinuteAmountInput
