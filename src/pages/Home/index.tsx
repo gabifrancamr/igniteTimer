@@ -65,7 +65,7 @@ export function Home() {
         if (secondsDifference >= totalSeconds) {
           setCycles((state) =>
             state.map((cycle) => {
-              if (activeCycleId === cycle.id) {
+              if (cycle.id === activeCycleId) {
                 return { ...cycle, dateFineshed: new Date() }
               } else {
                 return cycle
@@ -121,7 +121,7 @@ export function Home() {
 
   const currentSeconds = activeCycle ? totalSeconds - amountSecondsPassed : 0
 
-  const minutesAmount = Math.floor(totalSeconds / 60)
+  const minutesAmount = Math.floor(currentSeconds / 60)
   const secondsAmount = currentSeconds % 60
 
   const minutes = String(minutesAmount).padStart(2, '0')
