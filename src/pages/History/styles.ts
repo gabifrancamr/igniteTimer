@@ -15,9 +15,33 @@ export const HistoryContainer = styled.main`
 export const HistoryList = styled.div`
   flex: 1;
   overflow: auto;
-  overflow-y: scroll;
+  //overflow-y: scroll;
   max-height: 18rem;
   margin-top: 1.5rem;
+
+  @media (max-height: 590px) {
+    max-height: 14rem;
+  }
+
+  @media (min-height: 730px) {
+    max-height: 24rem;
+  }
+
+  @media (min-height: 812px) {
+    max-height: 28rem;
+  }
+
+  @media (min-height: 896px) {
+    max-height: 32rem;
+  }
+
+  @media (min-height: 960px) {
+    max-height: 35rem;
+  }
+
+  @media (min-height: 1112px) {
+    max-height: 45rem;
+  }
 
   &::-webkit-scrollbar {
     background-color: ${(props) => props.theme['gray-600']};
