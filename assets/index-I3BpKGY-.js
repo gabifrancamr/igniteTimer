@@ -192,8 +192,12 @@ Error generating stack: `+o.message+`
     font-size: 7rem;
   }
 
-  @media (min-width: 500px) and (max-width: 600px) {
+  @media (min-width: 500px) {
     font-size: 9rem;
+  }
+
+  @media (min-width: 600px) {
+    font-size: 10rem;
   }
 
   span {
